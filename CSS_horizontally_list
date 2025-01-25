@@ -1,0 +1,34 @@
+<!DOCTYPE html> <!--ドキュメントタイプ宣言-->
+<!----><!--コメント-->
+<html>
+<head>
+<style>
+/*横書き*/
+.yokogakilist ul{
+	display:flex;
+	align-items:center;
+	/*先頭の点を排除*/
+	list-style:none;
+}
+</style>
+</head>
+
+<body>
+<h2>Hello</h2>
+<!--縦書きリスト-->
+	<ul>
+		<li>縦書き1</li>
+		<li>縦書き2</li>
+		<li>縦書き3</li>
+	</ul>
+
+<!--横書きリスト-->
+<div class="yokogakilist">
+	<ul>
+		<li>横書き1</li>
+		<li>横書き2</li>
+		<li>横書き3</li>
+	</ul>
+</div>
+</body>
+</html>
