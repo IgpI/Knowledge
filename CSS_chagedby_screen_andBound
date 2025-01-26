@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!--ドキュメントタイプ宣言-->
+<!--リセットCSS読み込み-->
+<link rel="stylesheet" href="reset.css">
+<html>
+
+<head>
+	
+	<style>
+@media screen and (max-width: 760px){
+	.test1 {
+			background-color: greenyellow;
+			transition: 10s;
+        }
+}
+
+@media screen and (min-width: 760px){
+	.test1{
+			border:solid;
+			border-radius:5px 5px;
+			background-color:aqua;
+			width:100px;
+			transition: 10s;
+			animation-name:test_anime;
+			animation-duration: 0.5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+			animation-timing-function: ease-in;
+			margin: 0 auto;
+        }
+		@keyframes test_anime{
+
+			0%{
+				height: 100px;
+			}
+			100%{
+				height: 300px;
+			}
+		}
+	}	    
+
+	body {align-items:ceneter;}
+	
+	</style>
+</head>
+
+
+<!--インラインでのCSS記載-->
+<body style="background-color:plum">
+	<div class="test1">
+		<p>Hello</p>
+		<p>World</p>
+	</div>
+	<p>Hello</p>
+
+</body>
+</html>
